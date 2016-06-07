@@ -1,0 +1,39 @@
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+h3 {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 20px;
+	color: #666666;
+}
+p {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+}
+body {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+ul {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+td {
+	padding: 10px;
+	vertical-align: top;
+}
+a:visited {
+    color: #888888;
+    text-decoration: none;
+}
+a:link {
+    color: #444444;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: none;
+}

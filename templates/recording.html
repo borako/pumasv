@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Recording...</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+</head>
+<body>
+<h3>Recording... CH {{ ch }}: {{ name }}</h3>
+<a href="http://tv.alticastus.com:8090/recordstop/{{ ch}}">Stop</a>
+<br>
+<video id="video1" controls width="1280" height="720" autoplay>
+    <source src="http://50.207.206.171/tv/hls/ch{{ ch }}/ch{{ ch }}.m3u8">
+</video>
+
+<br><br>
+* Now recording this content.
+<br>
+* Make sure to press "Stop" link to stop the recording properly. 
+
+<script>
+var video = document.getElementById('video1');
+video.volume = {{ volume }};
+
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Recordings list</title>
+
+<style>
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+h3 {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 20px;
+	color: #666666;
+}
+p {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+}
+body {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+ul {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+td {
+	padding: 10px;
+	vertical-align: top;
+}
+a:visited {
+    color: #888888;
+    text-decoration: none;
+}
+a:link {
+    color: #444444;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+<h3>Recordings</h3>
+<a href="http://tv.alticastus.com:8090/tv/04">CBS</a>
+<a href="http://tv.alticastus.com:8090/tv/07">ABC</a>
+<a href="http://tv.alticastus.com:8090/tv/09">NBC</a>
+<a href="http://tv.alticastus.com:8090/tv/59">ION</a>
+<table>
+<tr>
+<td>
+<ul>
+{% for item in listrecs %}
+  <li><a href="http://tv.alticastus.com:8090/playrecording/{{ item["name"] }}">{{ item["name"] + "   " + item["size"] }}</a></li>
+{% endfor %}
+</ul>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

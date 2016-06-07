@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="5" >
+<html lang="en">
+<head>
+<title>HLS contents</title>
+
+<style>
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+h3 {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 20px;
+	color: #666666;
+}
+p {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+}
+body {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+ul {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 14px;
+	color: #888888;
+}
+td {
+	padding: 10px;
+	vertical-align: top;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<h3>CH04 HLS content</h3>
+<ul>
+{% for item in CH04 %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</td>
+
+<td>
+<h3>CH07 HLS content</h3>
+<ul>
+{% for item in CH07 %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</td>
+
+<td>
+<h3>CH09 HLS content</h3>
+<ul>
+{% for item in CH09 %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</td>
+
+<td>
+<h3>CH31 HLS content</h3>
+<ul>
+{% for item in CH31 %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</td>
+
+<td>
+<h3>CH59 HLS content</h3>
+<ul>
+{% for item in CH59 %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
